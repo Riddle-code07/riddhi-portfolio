@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Home() {
 return ( <main className="font-sans text-gray-900">
 
-```
+
   {/* HERO */}
   <section className="relative min-h-screen flex items-center px-6 md:px-20">
 
@@ -131,7 +131,7 @@ return ( <main className="font-sans text-gray-900">
 
     </div>
   </section>
-```
+
 
 
       {/* ABOUT */}
@@ -165,7 +165,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="space-y-8">
 
-```
+
 <div className="bg-white p-6 md:p-8 rounded-2xl shadow">
   <h3 className="text-xl md:text-2xl font-semibold">
     Shri M.D. Shah Mahila College
@@ -179,7 +179,7 @@ return ( <main className="font-sans text-gray-900">
     CGPA: 7.90
   </p>
 </div>
-```
+
 
   </div>
 </section>
@@ -196,7 +196,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-```
+
 {[
   "Python",
   "SQL",
@@ -218,7 +218,7 @@ return ( <main className="font-sans text-gray-900">
     {skill}
   </div>
 ))}
-```
+
 
   </div>
 </section>
@@ -234,7 +234,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-```
+
 {[
   "Business Analysis",
   "Market Research",
@@ -250,7 +250,7 @@ return ( <main className="font-sans text-gray-900">
     {skill}
   </div>
 ))}
-```
+
 
   </div>
 </section>
@@ -267,7 +267,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="bg-gray-100 rounded-2xl p-6 md:p-8 shadow">
 
-```
+
 <h3 className="text-xl md:text-2xl font-semibold">
   Research Analyst Intern — OZIBOOK
 </h3>
@@ -314,7 +314,7 @@ return ( <main className="font-sans text-gray-900">
   </li>
 
 </ul>
-```
+
 
   </div>
 </section>
@@ -338,7 +338,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-```
+
 <a
   href="https://github.com/Riddle-code07/mediaware_backend"
   target="_blank"
@@ -367,7 +367,7 @@ return ( <main className="font-sans text-gray-900">
     </p>
   </div>
 </a>
-```
+
 
   </div>
 
@@ -379,7 +379,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-```
+
 <a
   href="https://github.com/Riddle-code07/PowerBi_project-Data-Jobs-"
   target="_blank"
@@ -430,7 +430,7 @@ return ( <main className="font-sans text-gray-900">
     </p>
   </div>
 </div>
-```
+
 
   </div>
 
@@ -442,7 +442,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-```
+
 <a
   href="https://github.com/Riddle-code07/UPI-Market-Analysis"
   target="_blank"
@@ -472,7 +472,7 @@ return ( <main className="font-sans text-gray-900">
     </p>
   </div>
 </a>
-```
+
 
   </div>
 
@@ -484,7 +484,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="bg-gray-100 rounded-2xl p-6 md:p-8 shadow">
 
-```
+
 <h3 className="text-xl md:text-2xl font-semibold mb-4">
   Smartathon Motion Detection System
 </h3>
@@ -499,7 +499,7 @@ return ( <main className="font-sans text-gray-900">
 <p className="mt-4 text-sm text-gray-500">
   Arduino • Sensors • LCD Display • Hardware Integration
 </p>
-```
+
 
   </div>
 
@@ -520,7 +520,7 @@ return ( <main className="font-sans text-gray-900">
 
   <div className="bg-white rounded-2xl p-6 md:p-8 shadow max-w-4xl mx-auto">
 
-```
+
 <h3 className="text-xl md:text-2xl font-semibold mb-4">
   Academic Excellence Award
 </h3>
@@ -533,7 +533,7 @@ return ( <main className="font-sans text-gray-900">
   Awarded First Rank in Senior Secondary (XII) and recognized
   for outstanding academic performance and excellence.
 </p>
-```
+
 
   </div>
 </section>
@@ -600,7 +600,7 @@ return ( <main className="font-sans text-gray-900">
   </div>
 
 </div>
-```
+
 
   </div>
 </section>
