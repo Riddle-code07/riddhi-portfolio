@@ -24,18 +24,23 @@ export default function Home() {
 
           {/* NAVBAR */}
           <nav className="flex justify-between items-center mb-16 text-white">
-            <h1 className="text-2xl font-semibold">Riddhi.</h1>
+            <h1 className="text-3xl font-semibold">Riddhi Kadam.</h1>
 
             <div className="flex gap-10 text-sm">
               <a href="#about">About</a>
+              <a href="#education">Education</a>
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
             </div>
 
-            <button className="border border-white px-4 py-2 rounded-md text-sm hover:bg-white hover:text-black transition">
-              Download CV
-            </button>
+          <a
+  href="/resume.pdf"
+  download
+  className="border border-white px-4 py-2 rounded-md text-sm hover:bg-white hover:text-black transition"
+>
+  Download CV
+</a>
           </nav>
 
           {/* HERO CONTENT */}
@@ -56,7 +61,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-6xl font-bold leading-tight"
+                className="text-5xl font-bold leading-tight"
               >
                 Turning Data <br />
                 Into Decisions.
@@ -77,20 +82,23 @@ export default function Home() {
                 transition={{ delay: 0.8 }}
                 className="mt-8 flex gap-4"
               >
-                <button className="bg-white text-black px-6 py-3 rounded-md hover:scale-105 transition">
-                  View My Work
-                </button>
+                <a
+  href="#projects"
+  className="bg-white text-black px-6 py-3 rounded-md hover:scale-105 transition"
+>
+  Explore Projects
+</a>
 
-                <button className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black transition">
-                  Let’s Connect
-                </button>
+                <a
+  href="https://www.linkedin.com/in/riddhi-kadam07"
+  target="_blank"
+  className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black transition"
+>
+  Let’s Connect
+</a>
               </motion.div>
 
-              <div className="mt-10 flex gap-5 opacity-80">
-                <span>LinkedIn</span>
-                <span>GitHub</span>
-                <span>Email</span>
-              </div>
+              
             </div>
 
             {/* RIGHT IMAGE */}
@@ -123,13 +131,56 @@ export default function Home() {
           to extract meaningful insights from data.
         </p>
       </section>
+      {/* EDUCATION */}
+<section
+  id="education"
+  className="px-20 py-24 bg-gray-100"
+>
+  <h2 className="text-4xl font-bold mb-14 text-center">
+    Education
+  </h2>
+
+  <div className="space-y-8">
+
+    {/* COLLEGE */}
+    <div className="bg-white p-8 rounded-2xl shadow">
+      <h3 className="text-2xl font-semibold">
+        Shri M.D Shah mahila College
+      </h3>
+
+      <p className="text-gray-600 mt-2">
+        Bachelor of Computer Applications (BCA)
+      </p>
+
+      <p className="text-gray-500 mt-2">
+        CGPA: 7.90
+      </p>
+    </div>
+
+   
+
+  </div>
+</section>
 
       {/* SKILLS */}
       <section id="skills" className="px-20 py-20 bg-gray-100">
         <h2 className="text-3xl font-semibold mb-10">Skills</h2>
 
         <div className="grid grid-cols-3 gap-6">
-          {["Excel", "Python", "SQL", "Data Analysis", "Visualization", "Research"].map((skill) => (
+          {[
+"Python",
+"SQL",
+"Excel",
+"Power BI",
+"Pandas",
+"Flask",
+"Front-End Development",
+"Research Analysis",
+"Data Visualization",
+"Business Analysis",
+"Git & GitHub",
+"Problem Solving"
+].map((skill) => (
             <div
               key={skill}
               className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
@@ -140,30 +191,354 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section id="projects" className="px-20 py-20 bg-white">
-        <h2 className="text-3xl font-semibold mb-10">Projects</h2>
+      <section className="px-20 py-20 bg-white">
+  <h2 className="text-3xl font-semibold mb-10">
+    Core Competencies
+  </h2>
 
-        <div className="grid grid-cols-3 gap-6">
-          {[1, 2, 3].map((p) => (
-            <div key={p} className="border p-6 rounded-lg hover:shadow-md transition">
-              <h3 className="font-semibold mb-2">Project {p}</h3>
-              <p className="text-gray-600 text-sm">
-                Add your real project description here.
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="grid grid-cols-3 gap-6">
 
-      {/* CONTACT */}
-      <section id="contact" className="px-20 py-20 bg-gray-100">
-        <h2 className="text-3xl font-semibold mb-6">Contact</h2>
-        <p className="text-gray-600">
-          Feel free to reach out for opportunities or collaboration.
-        </p>
-      </section>
+    {[
+      "Business Analysis",
+      "Market Research",
+      "Project Management",
+      "Data Interpretation",
+      "Stakeholder Communication",
+      "Problem Solving"
+    ].map((skill) => (
+      <div
+        key={skill}
+        className="bg-gray-100 p-6 rounded-lg shadow"
+      >
+        {skill}
+      </div>
+    ))}
 
-    </main>
+  </div>
+</section>
+
+{/* INTERNSHIP */}
+<section
+  id="internship"
+  className="px-20 py-24 bg-white"
+>
+  <h2 className="text-4xl font-bold mb-14 text-center">
+     Experience
+  </h2>
+
+  <div className="bg-gray-100 rounded-2xl p-8 shadow">
+
+    <h3 className="text-2xl font-semibold">
+      Research Analyst Intern — OZIBOOK
+    </h3>
+
+    <p className="text-gray-500 mt-2">
+      Bangalore-based Startup
+    </p>
+
+    <p className="mt-6 text-gray-700 leading-7">
+ <li>Conducted in-depth research on various topics relevant to clients’ industries and business environments.</li>
+
+<li>Managed client profiles and perform profile optimization both for clients and in-house teams to enhance their LinkedIn presence and visibility.</li>
+
+<li>Analyzed clients’ businesses and competitors to develop insights that support creating stronger, more competitive profiles.</li>
+
+<li>Assist the project management team by ensuring client needs are met and services are delivered on time and at high quality.</li>
+
+<li>Collaborated with the business analyst team to help plan actionable strategies that clients can implement for growth and engagement.</li>
+
+<li>Served as a sub-team lead by managing and coordinating team efforts, ensuring timely and accurate completion of tasks.</li>
+
+<li>Hosted meetings and brainstorming sessions, and provide training to onboard new team members effectively.</li>
+    </p>
+
+  </div>
+</section>      
+
+    {/* PROJECTS */}
+
+<section
+  id="projects"
+  className="px-20 py-24 bg-white"
+>
+  <h2 className="text-4xl font-bold mb-14 text-center">
+    Projects
+  </h2>
+
+{/* SOFTWARE DEVELOPMENT */}
+
+  <h3 className="text-3xl font-bold mb-8">
+    💻 Software Development
+  </h3>
+
+  <div className="grid md:grid-cols-2 gap-10">
+
+```
+{/* MediAware */}
+<a
+  href="https://github.com/Riddle-code07/mediaware_backend"
+  target="_blank"
+  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition duration-300 border"
+>
+  <img
+    src="/project1.png"
+    className="w-full h-56 object-cover"
+  />
+
+  <div className="p-6">
+    <h3 className="text-2xl font-semibold mb-3">
+      MediAware
+    </h3>
+
+    <ul className="text-gray-600 list-disc pl-5 space-y-2">
+      <li>Healthcare platform for medicine users and medical store owners.</li>
+      <li>Provides structured medicine information in one place.</li>
+      <li>Allows stores to analyze demand trends and manufacturer insights.</li>
+    </ul>
+
+    <p className="mt-4 text-sm text-gray-500">
+      Flask • MySQL • Frontend • Python
+    </p>
+  </div>
+</a>
+```
+
+  </div>
+
+{/* DATA ANALYTICS & BI */}
+
+  <h3 className="text-3xl font-bold mt-20 mb-8">
+    📊 Data Analytics & BI
+  </h3>
+
+  <div className="grid md:grid-cols-2 gap-10">
+
+```
+{/* Data Jobs Dashboard */}
+<a
+  href="https://github.com/Riddle-code07/PowerBi_project-Data-Jobs-"
+  target="_blank"
+  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition duration-300 border"
+>
+  <img
+    src="/project2.jfif"
+    className="w-full h-56 object-cover"
+  />
+
+  <div className="p-6">
+    <h3 className="text-2xl font-semibold mb-3">
+      Data Jobs Dashboard
+    </h3>
+
+    <ul className="text-gray-600 list-disc pl-5 space-y-2">
+      <li>Interactive Power BI dashboard for analyzing US data job trends.</li>
+      <li>Visualizes salaries, hiring demand and role comparisons.</li>
+      <li>Helps identify market opportunities in the data industry.</li>
+    </ul>
+
+    <p className="mt-4 text-sm text-gray-500">
+      Power BI • Data Visualization
+    </p>
+  </div>
+</a>
+
+{/* SQL Dashboard Placeholder */}
+<div
+  className="bg-white rounded-2xl overflow-hidden shadow-lg border"
+>
+  <img
+    src="/sql-dashboard.png"
+    className="w-full h-56 object-cover"
+  />
+
+  <div className="p-6">
+    <h3 className="text-2xl font-semibold mb-3">
+      SQL Dashboard
+    </h3>
+
+    <p className="text-gray-600">
+      Add your SQL Dashboard description here.
+    </p>
+
+    <p className="mt-4 text-sm text-gray-500">
+      SQL • Power BI
+    </p>
+  </div>
+</div>
+```
+
+  </div>
+
+{/* PYTHON PROJECTS */}
+
+  <h3 className="text-3xl font-bold mt-20 mb-8">
+    🐍 Python Projects
+  </h3>
+
+  <div className="grid md:grid-cols-2 gap-10">
+
+```
+{/* UPI Transaction Analysis */}
+<a
+  href="https://github.com/Riddle-code07/UPI-Market-Analysis"
+  target="_blank"
+  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition duration-300 border"
+>
+  <img
+    src="/upi-project.png"
+    className="w-full h-56 object-cover"
+  />
+
+  <div className="p-6">
+
+    <h3 className="text-2xl font-semibold mb-3">
+      UPI Transaction Analysis
+    </h3>
+
+    <ul className="text-gray-600 list-disc pl-5 space-y-2">
+
+      <li>Analyzed UPI transaction data to identify market trends and leading payment apps.</li>
+
+      <li>Performed data cleaning and analysis using Python (Pandas) and SQL.</li>
+
+      <li>Built visualizations to track market share, growth trends and app competition.</li>
+
+      <li>Generated business insights on digital payment adoption in India.</li>
+
+    </ul>
+
+    <p className="mt-4 text-sm text-gray-500">
+      Python • Pandas • SQL • Matplotlib • GitHub
+    </p>
+
+  </div>
+</a>
+```
+
+  </div>
+
+{/* HARDWARE PROJECTS */}
+
+  <h3 className="text-3xl font-bold mt-20 mb-8">
+    🔌 Hardware Projects
+  </h3>
+
+  <div className="bg-gray-100 rounded-2xl p-8 shadow">
+
+```
+<h3 className="text-2xl font-semibold mb-4">
+  Smartathon Motion Detection System
+</h3>
+
+<p className="text-gray-700 leading-7">
+  Built an Automatic Human Motion Detection System using Arduino,
+  sensors, and LCD display components during a college Smartathon event.
+  The system detects nearby movement and displays count-based outputs
+  through sensor integration and embedded hardware logic.
+</p>
+
+<p className="mt-4 text-sm text-gray-500">
+  Arduino • Sensors • LCD Display • Hardware Integration
+</p>
+```
+
+  </div>
+
+</section>
+
+
+
+{/* ACHIEVEMENTS */}
+<section
+  id="achievements"
+  className="px-20 py-24 bg-gray-100"
+>
+  <h2 className="text-4xl font-bold mb-14 text-center">
+    Achievements
+  </h2>
+
+  <div className="bg-white rounded-2xl p-8 shadow">
+    <h3 className="text-2xl font-semibold">
+      Academic Achievement
+    </h3>
+
+      <h2 className="text-2xl font-semibold mb-4">
+ Chandaaben Mohanbhai Patel Rotary Excellence 
+Award 2023
+</h2>
+  <p className="text-gray-700 mt-4">
+Awarded First Rank in Senior Secondary (XII) with 
+recognition for academic excellence.
+    </p>
+  </div>
+</section>
+
+    {/* CONTACT */}
+<section
+  id="contact"
+  className="px-20 py-24 bg-[#dbeafe]"
+>
+  <h2 className="text-4xl font-bold mb-12 text-center">
+    Contact
+  </h2>
+
+  <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-10">
+
+    <div className="space-y-6 text-lg">
+
+      {/* LINKEDIN */}
+      <div>
+        <p className="font-semibold">LinkedIn</p>
+
+        <a
+          href="https://www.linkedin.com/in/riddhi-kadam07/"
+          target="_blank"
+          className="text-blue-600 hover:underline"
+        >
+          https://www.linkedin.com/in/riddhi-kadam07/
+        </a>
+      </div>
+
+      {/* GITHUB */}
+      <div>
+        <p className="font-semibold">GitHub</p>
+
+        <a
+          href="https://github.com/Riddle-code07"
+          target="_blank"
+          className="text-blue-600 hover:underline"
+        >
+          https://github.com/Riddle-code07
+        </a>
+      </div>
+
+            {/* EMAIL */}
+      <div>
+        <p className="font-semibold">Email</p>
+
+        <a
+          href="mailto:riddhikadam2005@gmail.com"
+          className="text-blue-600 hover:underline"
+        >
+          riddhikadam2005@gmail.com
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
   );
 }
+
+
+
+
+
+
+
+/*npm run dev
+cd riddhi-portfolio
+npm run dev
+http://localhost:3000*/
